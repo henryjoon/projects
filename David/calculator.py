@@ -26,16 +26,15 @@ def operating(a,oper,b):
         case _:
             return "E2"
 
-def main():
-    num1 = input("num1: ")
-    opt = input("operator: ")
-    num2 = input("num2: ")
+num1 = input("num1: ")
+opt = input("operator: ")
+num2 = input("num2: ")
 
-    result = operating(num1,opt,num2)
+result = operating(num1,opt,num2)
 
-    if (result == "E1"):
-        print("Error:Division by zero")
-    elif (result == "E2"):
-        print("Invalid operator")
-    else:
-        print("Result:", result)
+if (result == "E1"):
+    print("Error:Division by zero")
+elif (result == "E2"):
+    print("Invalid operator")
+else:
+    print("Result:", result)
